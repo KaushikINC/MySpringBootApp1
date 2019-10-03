@@ -10,7 +10,7 @@ public class MyAppController {
 	@RequestMapping("/welcome")
 	@ResponseBody
 	public String handler() {
-		return "Hello World!!! Welcome to new change.... again a change123";
+		return "Hello World!!! New change never seen by develop branch";
 	}
 	
 	@RequestMapping("/")
