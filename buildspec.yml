@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto8
+  build:
+    commands:
+      - echo Cleaning my Springboot application now.....
+      - mvn clean  
+  post_build:
+    commands:
+      - echo Building my app now.....
+      - mvn package
+artifacts:
+  files:
+    - target/MySpringBootApp1-0.0.1-SNAPSHOT.jar
+  discard-paths: yes
